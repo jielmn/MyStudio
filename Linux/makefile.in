@@ -1,0 +1,75 @@
+# 标准makefile文件
+
+# ==============================================================
+#              请修改这部分的内容
+# omit .o  包括完整的路径，如 $(BASE)/t1 $(CALL)/call
+OBJS            := 
+
+
+# 宏定义
+DEFINES         := 
+
+
+# multiple  例如  /usr/include   /user/openssl
+INCLUDE_PATH    := .
+
+
+# multiple
+LIB_PATH        := .
+
+
+# multiple  例如：pthread  rt  
+LIBS            := 
+
+
+# 打包archive(.a)还是exe(.out)
+MODE            := ARCHIVE
+
+
+# 最终输出的文件名称
+TARGET          := libtarget.a
+
+
+# 编译器选择
+CC              := g++
+AR              := ar
+
+
+# 其他选项，例如：-Wall
+MISC_FLAGS           := -Wall
+
+# ==================================================================================
+
+
+
+
+.PHONY : all
+all:
+	make -f common.mk OBJS="$(OBJS)" DEFINES="$(DEFINES)" INCLUDE_PATH="$(INCLUDE_PATH)" \
+	LIB_PATH="$(LIB_PATH)" LIBS="$(LIBS)" MODE="$(MODE)" TARGET="$(TARGET)" CC="$(CC)" AR="$(AR)" \
+	MISC_FLAGS="$(MISC_FLAGS)" COMMAND="all" -r
+	
+.PHONY : clean
+clean:
+	make -f common.mk OBJS="$(OBJS)" DEFINES="$(DEFINES)" INCLUDE_PATH="$(INCLUDE_PATH)" \
+	LIB_PATH="$(LIB_PATH)" LIBS="$(LIBS)" MODE= TARGET="$(TARGET)" CC="$(CC)" AR="$(AR)" \
+	MISC_FLAGS="$(MISC_FLAGS)" COMMAND="clean" -r
+
+
+.PHONY : debug
+debug:
+	make -f common.mk OBJS="$(OBJS)" DEFINES="$(DEFINES)" INCLUDE_PATH="$(INCLUDE_PATH)" \
+	LIB_PATH="$(LIB_PATH)" LIBS="$(LIBS)" MODE="$(MODE)" TARGET="$(TARGET)" CC="$(CC)" AR="$(AR)" \
+	MISC_FLAGS="$(MISC_FLAGS) -g" COMMAND="all" -r
+
+.PHONY : release
+release:
+	make -f common.mk OBJS="$(OBJS)" DEFINES="$(DEFINES)" INCLUDE_PATH="$(INCLUDE_PATH)" \
+	LIB_PATH="$(LIB_PATH)" LIBS="$(LIBS)" MODE="$(MODE)" TARGET="$(TARGET)" CC="$(CC)" AR="$(AR)" \
+	MISC_FLAGS="$(MISC_FLAGS) -O2" COMMAND="all" -r
+
+
+
+
+
+

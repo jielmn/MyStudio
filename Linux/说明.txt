@@ -1,0 +1,2 @@
+makefile独立使用
+makefile.in和common.mk一起使用
