@@ -1,0 +1,205 @@
+// !$*UTF8*$!
+{
+	0867D690FE84028FC02AAC07 /* Project object */ = {
+		activeArchitecturePreference = armv7;
+		activeBuildConfigurationName = Debug;
+		activeSDKPreference = iphoneos4.2;
+		activeTarget = D2AAC07D0554694100DB518D /* WeiBo */;
+		addToTargets = (
+			D2AAC07D0554694100DB518D /* WeiBo */,
+		);
+		codeSenseManager = BBD40D52150DBFDB00F5F39D /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					1153,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					1113,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 370158557;
+			PBXWorkspaceStateSaveDate = 370158557;
+		};
+		perUserProjectItems = {
+			BB49715816102D71008FB681 /* PBXTextBookmark */ = BB49715816102D71008FB681 /* PBXTextBookmark */;
+			BB49715916102D71008FB681 /* PBXBookmark */ = BB49715916102D71008FB681 /* PBXBookmark */;
+			BB49716A16102DF4008FB681 /* PBXTextBookmark */ = BB49716A16102DF4008FB681 /* PBXTextBookmark */;
+		};
+		sourceControlManager = BBD40D51150DBFDB00F5F39D /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	BB49715816102D71008FB681 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BBD40D57150DC29100F5F39D /* wbSession.cpp */;
+		name = "wbSession.cpp: 16";
+		rLen = 0;
+		rLoc = 245;
+		rType = 0;
+		vrLen = 973;
+		vrLoc = 0;
+	};
+	BB49715916102D71008FB681 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = BBD40D5A150DC29100F5F39D /* weibo.cpp */;
+	};
+	BB49716A16102DF4008FB681 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BBD40D5A150DC29100F5F39D /* weibo.cpp */;
+		name = "weibo.cpp: 8";
+		rLen = 0;
+		rLoc = 118;
+		rType = 0;
+		vrLen = 895;
+		vrLoc = 0;
+	};
+	BBC364BA151895020077B21D /* hash.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1331, 6944}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1465}";
+		};
+	};
+	BBC364BB151895020077B21D /* oauth.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1331, 14128}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1609}";
+		};
+	};
+	BBC364BC151895020077B21D /* strconv.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1331, 7232}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 757}";
+		};
+	};
+	BBC364BD151895020077B21D /* Urlcode.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1331, 2656}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 692}";
+		};
+	};
+	BBC364BE151895020077B21D /* xmalloc.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1331, 672}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 822}";
+		};
+	};
+	BBD40D51150DBFDB00F5F39D /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	BBD40D52150DBFDB00F5F39D /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	BBD40D54150DC29100F5F39D /* wbCheck.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1331, 8880}}";
+			sepNavSelRange = "{94, 0}";
+			sepNavVisRange = "{0, 961}";
+		};
+	};
+	BBD40D55150DC29100F5F39D /* wbOption.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1331, 3552}}";
+			sepNavSelRange = "{120, 0}";
+			sepNavVisRange = "{0, 878}";
+			sepNavWindowFrame = "{{15, 63}, {1629, 995}}";
+		};
+	};
+	BBD40D56150DC29100F5F39D /* wbRequest.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1331, 7344}}";
+			sepNavSelRange = "{629, 0}";
+			sepNavVisRange = "{231, 897}";
+		};
+	};
+	BBD40D57150DC29100F5F39D /* wbSession.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1388, 3920}}";
+			sepNavSelRange = "{245, 0}";
+			sepNavVisRange = "{181, 188}";
+			sepNavWindowFrame = "{{91, 31}, {1829, 960}}";
+		};
+	};
+	BBD40D58150DC29100F5F39D /* wbString.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1331, 1840}}";
+			sepNavSelRange = "{822, 0}";
+			sepNavVisRange = "{647, 808}";
+		};
+	};
+	BBD40D59150DC29100F5F39D /* wbURL.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1331, 42384}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 784}";
+		};
+	};
+	BBD40D5A150DC29100F5F39D /* weibo.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1331, 2208}}";
+			sepNavSelRange = "{118, 0}";
+			sepNavVisRange = "{0, 895}";
+			sepNavWindowFrame = "{{15, 63}, {1629, 995}}";
+		};
+	};
+	BBEDCF7715205BF0005EF8E6 /* bbiconv.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1388, 9440}}";
+			sepNavSelRange = "{142, 0}";
+			sepNavVisRange = "{22, 163}";
+			sepNavWindowFrame = "{{15, 63}, {1629, 995}}";
+		};
+	};
+	D2AAC07D0554694100DB518D /* WeiBo */ = {
+		activeExec = 0;
+	};
+}

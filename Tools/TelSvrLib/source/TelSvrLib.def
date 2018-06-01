@@ -1,0 +1,6 @@
+LIBRARY
+EXPORTS
+JTelSvrStart      @1
+JTelSvrStop       @2
+JTelSvrRegCommand @3
+JTelSvrPrint      @4

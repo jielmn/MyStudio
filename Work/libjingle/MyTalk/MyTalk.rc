@@ -1,0 +1,731 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\MyTalk.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MyTalk.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 MyTalk"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "MyTalk，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2011",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_MYTALK_DIALOG DIALOGEX 0, 0, 142, 199
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "好友列表"
+MENU IDR_MENU_MAIN
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_STATUS,2,185,139,73,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_TREE_ROSTER,"SysTreeView32",TVS_INFOTIP | WS_BORDER | WS_HSCROLL | WS_TABSTOP,1,0,141,182
+END
+
+IDD_ACCOUNT DIALOGEX 0, 0, 316, 166
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "账号"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_ACCOUNT,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,302,130
+    PUSHBUTTON      "修改",IDC_BUTTON_MODIFY,82,142,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,183,142,50,14
+END
+
+IDD_SUB_ACCOUNT DIALOGEX 0, 0, 405, 230
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "账号"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_USERNAME,57,14,107,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORD,57,36,107,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DOMAIN,219,14,107,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HOST,219,38,107,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RESOURCE,57,61,107,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,191,202,50,14
+    LTEXT           "用户名：",IDC_STATIC,16,17,35,8
+    LTEXT           "密码：",IDC_STATIC,16,40,35,8
+    LTEXT           "域名：",IDC_STATIC,177,18,35,8
+    LTEXT           "主机：",IDC_STATIC,177,41,35,8
+    LTEXT           "资源：",IDC_STATIC,16,65,35,8
+    CONTROL         "使用TLS",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,177,62,43,10
+    LTEXT           "Stun Server Address:",IDC_STATIC,15,111,70,8
+    EDITTEXT        IDC_EDIT_STUN_ADDR,91,108,78,14,ES_AUTOHSCROLL
+    LTEXT           "Relay Server:",IDC_STATIC,16,136,45,8
+    EDITTEXT        IDC_EDIT_RELAY_ADDR,92,132,78,14,ES_AUTOHSCROLL
+    LTEXT           "Stun Server Port:",IDC_STATIC,180,111,57,8
+    EDITTEXT        IDC_EDIT_STUN_PORT,256,108,78,14,ES_AUTOHSCROLL
+    GROUPBOX        "文件传输配置",IDC_STATIC,7,94,384,100
+    LTEXT           "文件保存路径:",IDC_STATIC,16,157,52,8
+    EDITTEXT        IDC_EDIT_SAVE_PATH,91,156,279,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_BTN_FOLDER,374,156,15,14
+END
+
+IDD_XMPP_MSG DIALOGEX 0, 0, 330, 238
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "XMPP控制台"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_CUSTOM_MSG,7,217,316,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MSG,7,7,316,198,ES_MULTILINE | ES_READONLY | ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_CHAT DIALOGEX 0, 0, 352, 216
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MAXIMIZEBOX | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "对话"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST_MSG,7,7,338,138,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_MSG,7,153,291,32,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN
+    DEFPUSHBUTTON   "发送",IDC_BTN_SEND,305,153,40,29
+    LTEXT           "",IDC_STATIC1,7,201,338,8
+END
+
+IDD_ADD_FRIEND DIALOGEX 0, 0, 244, 174
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加好友"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_ACCOUNT,67,14,113,67,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_JID,67,38,113,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NICK,67,63,113,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_GROUP,67,91,113,66,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "添加",IDC_BTN_ADD,113,130,50,14
+    PUSHBUTTON      "取消",IDC_BTN_CANCEL,171,130,50,14
+    LTEXT           "账号",IDC_STATIC,14,14,44,8
+    LTEXT           "好友名称:",IDC_STATIC,14,39,36,8
+    LTEXT           "别名:",IDC_STATIC,16,64,36,8
+    LTEXT           "添加到组:",IDC_STATIC,15,93,36,8
+END
+
+IDD_SET_NICK DIALOGEX 0, 0, 274, 111
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置别名"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,83,72,50,14
+    PUSHBUTTON      "取消",IDCANCEL,151,71,50,14
+    LTEXT           "别名:",IDC_STATIC,15,16,38,8
+    EDITTEXT        IDC_EDIT_NICK,56,15,177,14,ES_AUTOHSCROLL
+END
+
+IDD_ON_SUBSCRIBE DIALOGEX 0, 0, 194, 78
+STYLE DS_SETFONT | WS_CHILD | WS_BORDER | WS_SYSMENU
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "同意",IDC_BTN_AGREE,92,63,31,14
+    PUSHBUTTON      "拒绝",IDC_BTN_REJECT,127,63,31,14
+    DEFPUSHBUTTON   "关闭",IDC_BTN_CLOSE,162,63,31,14
+    LTEXT           "消息",IDC_STATIC_MSG,0,0,193,59
+END
+
+IDD_CREATE_CHATROOM DIALOGEX 0, 0, 316, 260
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "发送即时消息"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,205,231,50,14
+    PUSHBUTTON      "取消",IDCANCEL,259,231,50,14
+    LTEXT           "发起人:",IDC_STATIC,7,18,35,8
+    COMBOBOX        IDC_COMBO_OWNER,41,17,130,97,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST_PARTICIPANT,7,52,200,124,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "参与人:",IDC_STATIC,7,39,37,8
+    PUSHBUTTON      "添加",IDC_BTN_ADD,95,182,50,14
+    PUSHBUTTON      "删除",IDC_BTN_DEL,153,182,50,14
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,7,220,302,1
+    CONTROL         "固定聊天室",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,207,87,10
+END
+
+IDD_PARTICIPANT DIALOGEX 0, 0, 316, 124
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "被邀请人"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_PARTICIPANT,53,16,154,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,203,103,50,14
+    PUSHBUTTON      "取消",IDCANCEL,259,103,50,14
+    LTEXT           "参与人:",IDC_STATIC,7,17,37,8
+END
+
+IDD_CHATROOM DIALOGEX 0, 0, 584, 281
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MAXIMIZEBOX | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "聊天室"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST_MSG,7,7,310,247,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "与会人员",IDC_STATIC_PARTICIPANT,331,7,33,8
+    CONTROL         "",IDC_LIST_PARTICIPANT,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,327,17,250,190
+    EDITTEXT        IDC_EDIT_MSG,323,223,218,31,ES_AUTOHSCROLL
+    LTEXT           "发送消息",IDC_STATIC_SEND_MSG,327,212,33,8
+    DEFPUSHBUTTON   "发送",IDC_BTN_SEND,546,223,31,29
+END
+
+IDD_SEL_ACCOUNT DIALOGEX 0, 0, 319, 178
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MyTalk"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,205,157,50,14
+    PUSHBUTTON      "取消",IDCANCEL,262,157,50,14
+    LTEXT           "账号:",IDC_STATIC,7,17,37,8
+    COMBOBOX        IDC_COMBO_ACCOUNT,45,15,157,72,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_FILE_TRANSFER DIALOGEX 0, 0, 387, 266
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "文件传输"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST_SEND,7,23,254,74,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "选择待传输的文件:",IDC_STATIC,7,7,93,8
+    PUSHBUTTON      "添加文件...",IDC_BTN_ADD_FILE,268,25,56,14
+    PUSHBUTTON      "添加文件夹...",IDC_BTN_ADD_FOLDER,268,45,56,14
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,7,117,373,1
+    PUSHBUTTON      "发送",IDC_BTN_SEND,7,98,50,14
+    PUSHBUTTON      "删除",IDC_BTN_DELETE,268,66,56,14
+END
+
+IDD_PROGRESS DIALOGEX 0, 0, 358, 39
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "进度:",IDC_STATIC,5,11,20,8
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,33,8,220,14
+    PUSHBUTTON      "中止",IDC_BTN_CANCEL,257,8,24,14
+    PUSHBUTTON      "接受",IDC_BTN_ACCEPT,283,8,24,14
+    CTEXT           "当前文件",IDC_STATIC_CURRENT,33,25,223,8
+    LTEXT           "数字",IDC_STATIC_NUM,337,10,17,8
+    PUSHBUTTON      "拒绝",IDC_BTN_DECLINE,310,8,24,14
+END
+
+IDD_EMPTY DIALOGEX 0, 0, 77, 14
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_TEST_DMS_GROUP DIALOGEX 0, 0, 397, 238
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "测试Dms Group"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TREE_ROSTER,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | WS_BORDER | WS_HSCROLL | WS_TABSTOP,7,7,383,184
+    LTEXT           "移动组",IDC_STATIC,17,199,25,8
+    EDITTEXT        IDC_EDIT_MOVE_GROUP,55,196,72,14,ES_AUTOHSCROLL
+    LTEXT           "为组",IDC_STATIC,135,199,17,8
+    EDITTEXT        IDC_EDIT_MOVE_GROUP_PARENT,159,196,77,14,ES_AUTOHSCROLL
+    LTEXT           "的子组",IDC_STATIC,250,199,25,8
+    LTEXT           "移动成员",IDC_STATIC,17,220,33,8
+    EDITTEXT        IDC_EDIT_MOVE_MEMBER,55,217,72,14,ES_AUTOHSCROLL
+    LTEXT           "为组",IDC_STATIC,135,220,17,8
+    EDITTEXT        IDC_EDIT_MOVE_MEMBER_PARENT,159,217,77,14,ES_AUTOHSCROLL
+    LTEXT           "的成员",IDC_STATIC,250,220,25,8
+    PUSHBUTTON      "移动",IDC_BUTTON_MOVE_GROUP,287,196,50,14
+    PUSHBUTTON      "移动",IDC_BUTTON_MOVE_MEMBER,287,217,50,14
+END
+
+IDD_TEST_DMS_ADD_GROUP DIALOGEX 0, 0, 316, 180
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加或修改组"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_GROUP_NAME,100,35,150,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,104,159,50,14
+    PUSHBUTTON      "取消",IDCANCEL,167,159,50,14
+    LTEXT           "组名：",IDC_STATIC,45,35,47,8
+END
+
+IDD_TEST_DMS_ADD_MEMBER DIALOGEX 0, 0, 316, 218
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加或修改成员"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_JID,103,18,150,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NAME,103,50,150,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,99,197,50,14
+    PUSHBUTTON      "取消",IDCANCEL,153,197,50,14
+    LTEXT           "名称：",IDC_STATIC,45,50,47,8
+    LTEXT           "Jid：",IDC_STATIC,45,18,47,8
+    LTEXT           "类型：",IDC_STATIC,43,82,25,8
+    EDITTEXT        IDC_EDIT_TYPE,103,78,149,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,104,106,102,14,ES_AUTOHSCROLL
+    LTEXT           "reserverd 1:",IDC_STATIC,43,109,41,8
+    EDITTEXT        IDC_EDIT3,104,128,102,14,ES_AUTOHSCROLL
+    LTEXT           "reserverd 2:",IDC_STATIC,43,131,41,8
+    EDITTEXT        IDC_EDIT5,104,149,102,14,ES_AUTOHSCROLL
+    LTEXT           "reserverd 3:",IDC_STATIC,43,152,41,8
+    EDITTEXT        IDC_EDIT6,104,170,102,14,ES_AUTOHSCROLL
+    LTEXT           "reserverd 4:",IDC_STATIC,43,173,41,8
+END
+
+IDD_VCARD_SET DIALOGEX 0, 0, 265, 123
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "修改自己的vcard"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_NAME,92,14,166,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_SYS_PIC_INDEX,91,36,118,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "选择自定义头像",IDC_BUTTON_BROWN_PIC,124,66,70,14
+    DEFPUSHBUTTON   "确定",IDOK,65,102,50,14
+    PUSHBUTTON      "取消",IDCANCEL,126,102,50,14
+    LTEXT           "姓名：",IDC_STATIC,7,16,25,8
+    LTEXT           "选择头像：",IDC_STATIC,7,39,41,8
+    CONTROL         "",IDC_STATIC_PIC,"Static",SS_BLACKFRAME,92,63,24,21
+END
+
+IDD_PASSWORD DIALOGEX 0, 0, 316, 180
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_PASSWORD,76,17,144,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CONFIRM_PASSWORD,75,39,144,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,205,159,50,14
+    PUSHBUTTON      "取消",IDCANCEL,259,159,50,14
+    LTEXT           "新密码：",IDC_STATIC,21,22,33,8
+    LTEXT           "确认密码：",IDC_STATIC,21,41,41,8
+END
+
+IDD_PICTURE DIALOGEX 0, 0, 362, 222
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图片"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_PICTURE_PATH,7,201,256,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_BTN_BROWSE,269,201,33,14
+    PUSHBUTTON      "发送",IDC_BTN_SEND,305,201,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "MyTalk.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "MyTalk.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_ACCOUNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_SUB_ACCOUNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 398
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 223
+    END
+
+    IDD_XMPP_MSG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 323
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 231
+    END
+
+    IDD_CHAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 345
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 209
+    END
+
+    IDD_ADD_FRIEND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_SET_NICK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_ON_SUBSCRIBE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 193
+    END
+
+    IDD_CREATE_CHATROOM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 253
+    END
+
+    IDD_PARTICIPANT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 117
+    END
+
+    IDD_CHATROOM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 577
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 274
+    END
+
+    IDD_SEL_ACCOUNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_FILE_TRANSFER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 380
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 259
+    END
+
+    IDD_TEST_DMS_GROUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 390
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 231
+    END
+
+    IDD_TEST_DMS_ADD_GROUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_TEST_DMS_ADD_MEMBER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_VCARD_SET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 258
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 116
+    END
+
+    IDD_PASSWORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_PICTURE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 355
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_MAIN MENU 
+BEGIN
+    POPUP "操作"
+    BEGIN
+        MENUITEM "添加好友",                        ID_ADD_FRIEND
+        MENUITEM SEPARATOR
+        MENUITEM "发送即时消息",                      ID_CREATE_CHATROOM
+    END
+    POPUP "账号"
+    BEGIN
+        MENUITEM "管理账号",                        ID_ACCOUNT
+        MENUITEM "启用账号",                        65535
+    END
+    POPUP "工具"
+    BEGIN
+        MENUITEM "XMPP控制台",                     ID_XMPP_CONSOLE
+        MENUITEM SEPARATOR
+        MENUITEM "显示调试消息",                      ID_DEBUG_INFO
+    END
+    POPUP "帮助"
+    BEGIN
+        MENUITEM "关于",                          ID_32776
+        MENUITEM SEPARATOR
+        MENUITEM "测试Dms Group",                 ID_TEST
+        MENUITEM "测试",                          ID_TEST_MISC
+    END
+END
+
+IDR_MENU_FRIEND MENU 
+BEGIN
+    POPUP "好友"
+    BEGIN
+        MENUITEM "删除...",                       ID_DEL_FRIEND
+        MENUITEM "修改别名...",                     ID_SET_NICK
+        MENUITEM SEPARATOR
+        MENUITEM "加关注",                         ID_SUBSCRIBE
+        MENUITEM "取消关注",                        ID_UNSUBSCRIBE
+        MENUITEM "取消被关注",                       ID_UNSUBSCRIBED
+        MENUITEM SEPARATOR
+        MENUITEM "传输文件...",                     ID_FILE_TRANSFER
+        MENUITEM SEPARATOR
+        MENUITEM "查看信息",                        ID_GET_VCARD_INFO
+        MENUITEM SEPARATOR
+        MENUITEM "传输图片",                        ID_SEND_PICTURE
+    END
+END
+
+IDR_MENU_CHATROOM MENU 
+BEGIN
+    POPUP "操作"
+    BEGIN
+        MENUITEM "邀请",                          ID_INVITE
+        MENUITEM "退出",                          ID_QUIT_CHATROOM
+        MENUITEM SEPARATOR
+        MENUITEM "销毁房间",                        ID_DESTROY_CHATROOM
+        MENUITEM SEPARATOR
+        MENUITEM "踢人",                          ID_KICK
+        MENUITEM SEPARATOR
+        MENUITEM "屏蔽消息",                        ID_SCREEN
+        MENUITEM "取消屏蔽",                        ID_UNSCREEN
+        MENUITEM SEPARATOR
+        MENUITEM "测试",                          ID_CHATROOM_TEST
+    END
+END
+
+IDR_MENU_DMS_GROUP MENU 
+BEGIN
+    POPUP "DMS 测试"
+    BEGIN
+        MENUITEM "添加子组",                        ID_DMS_ADD_GROUP
+        MENUITEM "修改组",                         ID_DMS_MODIFY_GROUP
+        MENUITEM "删除该组",                        ID_DMS_DEL_GROUP
+        MENUITEM SEPARATOR
+        MENUITEM "添加联系人",                       ID_DMS_ADD_MEMBER
+    END
+END
+
+IDR_MENU_DMS_TOP_GROUP MENU 
+BEGIN
+    POPUP "DMS 测试"
+    BEGIN
+        MENUITEM "添加顶级组",                       ID_DMS_ADD_GROUP
+    END
+END
+
+IDR_MENU_DMS_MEMBER MENU 
+BEGIN
+    POPUP "DMS 测试"
+    BEGIN
+        MENUITEM "修改联系人",                       ID_DMS_MODIFY_MEMBER
+        MENUITEM "删除联系人",                       ID_DMS_DEL_MEMBER
+    END
+END
+
+IDR_MENU_SELF MENU 
+BEGIN
+    POPUP "自己"
+    BEGIN
+        MENUITEM "修改个人信息",                      ID_VCARD_SET
+        MENUITEM "修改秘密",                        ID_PASSWORD
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_OFF                 BITMAP                  "res\\5.bmp"
+IDB_AVAILABLE           BITMAP                  "res\\1.bmp"
+IDB_AWAY                BITMAP                  "res\\2.bmp"
+IDB_XA                  BITMAP                  "res\\3.bmp"
+IDB_BUSY                BITMAP                  "res\\4.bmp"
+IDB_FOLDER              BITMAP                  "res\\folder.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 MyTalk(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\MyTalk.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

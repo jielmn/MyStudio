@@ -1,0 +1,131 @@
+// !$*UTF8*$!
+{
+	0867D690FE84028FC02AAC07 /* Project object */ = {
+		activeArchitecturePreference = armv7;
+		activeBuildConfigurationName = Debug;
+		activeSDKPreference = iphonesimulator4.2;
+		activeTarget = D2AAC07D0554694100DB518D /* KedaWeiBoAPI */;
+		addToTargets = (
+			D2AAC07D0554694100DB518D /* KedaWeiBoAPI */,
+		);
+		breakpoints = (
+		);
+		codeSenseManager = BBC364A515187D0B0077B21D /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					1170,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXSymbolsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXSymbolsDataSource_SymbolNameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					16,
+					200,
+					50,
+					1110,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXSymbolsDataSource_SymbolTypeIconID,
+					PBXSymbolsDataSource_SymbolNameID,
+					PBXSymbolsDataSource_SymbolTypeID,
+					PBXSymbolsDataSource_ReferenceNameID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					1130,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 370156231;
+			PBXWorkspaceStateSaveDate = 370156231;
+		};
+		perUserProjectItems = {
+			BB4970EF16102359008FB681 /* PBXBookmark */ = BB4970EF16102359008FB681 /* PBXBookmark */;
+			BB4970F016102359008FB681 /* PBXTextBookmark */ = BB4970F016102359008FB681 /* PBXTextBookmark */;
+		};
+		sourceControlManager = BBC364A415187D0B0077B21D /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	BB4970D51610230A008FB681 /* KedaWeiBoAPI.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1348, 4435}}";
+			sepNavSelRange = "{285, 0}";
+			sepNavVisRange = "{0, 820}";
+		};
+	};
+	BB4970EF16102359008FB681 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = BB4970D51610230A008FB681 /* KedaWeiBoAPI.h */;
+	};
+	BB4970F016102359008FB681 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BB4970D51610230A008FB681 /* KedaWeiBoAPI.h */;
+		name = "KedaWeiBoAPI.h: 13";
+		rLen = 0;
+		rLoc = 285;
+		rType = 0;
+		vrLen = 820;
+		vrLoc = 0;
+	};
+	BBC364A415187D0B0077B21D /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	BBC364A515187D0B0077B21D /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	BBC364A915187DF40077B21D /* KedaWeiBoAPI.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1348, 4313}}";
+			sepNavSelRange = "{2983, 0}";
+			sepNavVisRange = "{2833, 1591}";
+		};
+	};
+	D2AAC07D0554694100DB518D /* KedaWeiBoAPI */ = {
+		activeExec = 0;
+	};
+}

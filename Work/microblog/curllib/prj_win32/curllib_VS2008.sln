@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Curllib_7.21.1_VC90", "curllib_VS2008.vcproj", "{8CA5BEF4-265F-4544-90F3-5C41D4D55C15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		DLL Debug|Win32 = DLL Debug|Win32
+		DLL Release|Win32 = DLL Release|Win32
+		LIB Debug|Win32 = LIB Debug|Win32
+		LIB Release|Win32 = LIB Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CA5BEF4-265F-4544-90F3-5C41D4D55C15}.DLL Debug|Win32.ActiveCfg = DLL Debug|Win32
+		{8CA5BEF4-265F-4544-90F3-5C41D4D55C15}.DLL Debug|Win32.Build.0 = DLL Debug|Win32
+		{8CA5BEF4-265F-4544-90F3-5C41D4D55C15}.DLL Release|Win32.ActiveCfg = DLL Release|Win32
+		{8CA5BEF4-265F-4544-90F3-5C41D4D55C15}.DLL Release|Win32.Build.0 = DLL Release|Win32
+		{8CA5BEF4-265F-4544-90F3-5C41D4D55C15}.LIB Debug|Win32.ActiveCfg = DLL Debug|Win32
+		{8CA5BEF4-265F-4544-90F3-5C41D4D55C15}.LIB Debug|Win32.Build.0 = DLL Debug|Win32
+		{8CA5BEF4-265F-4544-90F3-5C41D4D55C15}.LIB Release|Win32.ActiveCfg = LIB Release|Win32
+		{8CA5BEF4-265F-4544-90F3-5C41D4D55C15}.LIB Release|Win32.Build.0 = LIB Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

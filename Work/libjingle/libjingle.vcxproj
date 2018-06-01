@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DC948D76-8503-490C-A07D-11044004FCE3}</ProjectGuid>
+    <RootNamespace>libjingle</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">libjinglex</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">libjinglex</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN32;UNICODE;_UNICODE;WINVER=0x0500;_WIN32_WINNT=0x500;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;PRODUCTION_BUILD;PRODUCTION;XML_STATIC;FEATURE_ENABLE_SSL;FEATURE_ENABLE_CHAT_ARCHIVING;FEATURE_ENABLE_VOICEMAIL;NO_ATL;HAVE_GIPSLITE;LIBJINGLE_EXPORTS;SUPPORT_STATUS_ROOM;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libexpat.lib;Ws2_32.lib;Secur32.lib;Iphlpapi.lib;Wininet.lib;Crypt32.lib;Winmm.lib;zlibx.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)libjinglex.dll</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\10-common\lib\debug\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;UNICODE;_UNICODE;WINVER=0x0500;_WIN32_WINNT=0x500;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;PRODUCTION_BUILD;PRODUCTION;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;XML_STATIC;FEATURE_ENABLE_SSL;FEATURE_ENABLE_CHAT_ARCHIVING;LIBJINGLE_EXPORTS;SUPPORT_STATUS_ROOM;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libexpat.lib;Ws2_32.lib;Secur32.lib;Iphlpapi.lib;Wininet.lib;Crypt32.lib;Winmm.lib;zlibx.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)libjinglex.dll</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\10-common\lib\release\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>libjingle.map</MapFileName>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="xmllite\qname.cc" />
+    <ClCompile Include="xmllite\xmlbuilder.cc" />
+    <ClCompile Include="xmllite\xmlconstants.cc" />
+    <ClCompile Include="xmllite\xmlelement.cc" />
+    <ClCompile Include="xmllite\xmlnsstack.cc" />
+    <ClCompile Include="xmllite\xmlparser.cc" />
+    <ClCompile Include="xmllite\xmlprinter.cc" />
+    <ClCompile Include="xmpp\constants.cc" />
+    <ClCompile Include="xmpp\jid.cc" />
+    <ClCompile Include="xmpp\ratelimitmanager.cc" />
+    <ClCompile Include="xmpp\saslmechanism.cc" />
+    <ClCompile Include="xmpp\xmppclient.cc" />
+    <ClCompile Include="xmpp\xmppengineimpl.cc" />
+    <ClCompile Include="xmpp\xmppengineimpl_iq.cc" />
+    <ClCompile Include="xmpp\xmpplogintask.cc" />
+    <ClCompile Include="xmpp\xmppstanzaparser.cc" />
+    <ClCompile Include="xmpp\xmpptask.cc" />
+    <ClCompile Include="base\asynchttprequest.cc" />
+    <ClCompile Include="base\asyncpacketsocket.cc" />
+    <ClCompile Include="base\asynctcpsocket.cc" />
+    <ClCompile Include="base\asyncudpsocket.cc" />
+    <ClCompile Include="base\autodetectproxy.cc" />
+    <ClCompile Include="base\base64.cc" />
+    <ClCompile Include="base\bytebuffer.cc" />
+    <ClCompile Include="base\common.cc" />
+    <ClCompile Include="base\diskcache.cc" />
+    <ClCompile Include="base\diskcache_win32.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="base\fileutils.cc" />
+    <ClCompile Include="base\firewallsocketserver.cc" />
+    <ClCompile Include="base\helpers.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="base\host.cc" />
+    <ClCompile Include="base\httpbase.cc" />
+    <ClCompile Include="base\httpclient.cc" />
+    <ClCompile Include="base\httpcommon.cc" />
+    <ClCompile Include="base\httpserver.cc" />
+    <ClCompile Include="base\logging.cc" />
+    <ClCompile Include="base\md5c.cc" />
+    <ClCompile Include="base\messagequeue.cc" />
+    <ClCompile Include="base\network.cc" />
+    <ClCompile Include="base\openssladapter.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="base\pathutils.cc" />
+    <ClCompile Include="base\physicalsocketserver.cc" />
+    <ClCompile Include="base\proxydetect.cc" />
+    <ClCompile Include="base\proxyinfo.cc" />
+    <ClCompile Include="base\schanneladapter.cc" />
+    <ClCompile Include="base\signalthread.cc" />
+    <ClCompile Include="base\socketadapters.cc" />
+    <ClCompile Include="base\socketaddress.cc" />
+    <ClCompile Include="base\socketpool.cc" />
+    <ClCompile Include="base\ssladapter.cc" />
+    <ClCompile Include="base\stream.cc" />
+    <ClCompile Include="base\streamutils.cc" />
+    <ClCompile Include="base\stringdigest.cc" />
+    <ClCompile Include="base\stringencode.cc" />
+    <ClCompile Include="base\stringutils.cc" />
+    <ClCompile Include="base\tarstream.cc" />
+    <ClCompile Include="base\task.cc" />
+    <ClCompile Include="base\taskrunner.cc" />
+    <ClCompile Include="base\thread.cc" />
+    <ClCompile Include="base\time.cc" />
+    <ClCompile Include="base\win32filesystem.cc" />
+    <ClCompile Include="base\win32socketserver.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="base\winfirewall.cc" />
+    <ClCompile Include="base\winping.cc" />
+    <ClCompile Include="p2p\base\constants.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="p2p\base\p2ptransport.cc" />
+    <ClCompile Include="p2p\base\p2ptransportchannel.cc" />
+    <ClCompile Include="p2p\base\port.cc" />
+    <ClCompile Include="p2p\base\pseudotcp.cc" />
+    <ClCompile Include="p2p\base\rawtransport.cc" />
+    <ClCompile Include="p2p\base\rawtransportchannel.cc" />
+    <ClCompile Include="p2p\base\relayport.cc" />
+    <ClCompile Include="p2p\base\session.cc" />
+    <ClCompile Include="p2p\base\sessionmanager.cc" />
+    <ClCompile Include="p2p\base\stun.cc" />
+    <ClCompile Include="p2p\base\stunport.cc" />
+    <ClCompile Include="p2p\base\stunrequest.cc" />
+    <ClCompile Include="p2p\base\tcpport.cc" />
+    <ClCompile Include="p2p\base\transport.cc" />
+    <ClCompile Include="p2p\base\transportchannel.cc" />
+    <ClCompile Include="p2p\base\transportchannelproxy.cc" />
+    <ClCompile Include="p2p\base\udpport.cc" />
+    <ClCompile Include="p2p\client\basicportallocator.cc" />
+    <ClCompile Include="p2p\client\httpportallocator.cc" />
+    <ClCompile Include="p2p\client\socketmonitor.cc" />
+    <ClCompile Include="session\tunnel\tunnelsessionclient.cc" />
+    <ClCompile Include="session\fileshare\fileshare.cc" />
+    <ClCompile Include="examples\login\presenceouttask.cc" />
+    <ClCompile Include="examples\login\presencepushtask.cc" />
+    <ClCompile Include="examples\login\xmppauth.cc" />
+    <ClCompile Include="examples\login\xmpppump.cc" />
+    <ClCompile Include="examples\login\xmppsocket.cc" />
+    <ClCompile Include="examples\login\xmppthread.cc" />
+    <ClCompile Include="libjingle\libjingle.cpp" />
+    <ClCompile Include="libjingle\strutils.cpp" />
+    <ClCompile Include="base\urlencode.cc" />
+    <ClCompile Include="session\tunnel\pseudotcpchannel.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="session\fileshare\fileshare.h" />
+    <ClInclude Include="xmllite\qname.h" />
+    <ClInclude Include="xmllite\xmlbuilder.h" />
+    <ClInclude Include="xmllite\xmlconstants.h" />
+    <ClInclude Include="xmllite\xmlelement.h" />
+    <ClInclude Include="xmllite\xmlnsstack.h" />
+    <ClInclude Include="xmllite\xmlparser.h" />
+    <ClInclude Include="xmllite\xmlprinter.h" />
+    <ClInclude Include="xmpp\asyncsocket.h" />
+    <ClInclude Include="xmpp\constants.h" />
+    <ClInclude Include="xmpp\jid.h" />
+    <ClInclude Include="xmpp\plainsaslhandler.h" />
+    <ClInclude Include="xmpp\prexmppauth.h" />
+    <ClInclude Include="xmpp\saslcookiemechanism.h" />
+    <ClInclude Include="xmpp\saslhandler.h" />
+    <ClInclude Include="xmpp\saslmechanism.h" />
+    <ClInclude Include="xmpp\saslplainmechanism.h" />
+    <ClInclude Include="xmpp\xmppclient.h" />
+    <ClInclude Include="xmpp\xmppclientsettings.h" />
+    <ClInclude Include="xmpp\xmppengine.h" />
+    <ClInclude Include="xmpp\xmppengineimpl.h" />
+    <ClInclude Include="xmpp\xmpplogintask.h" />
+    <ClInclude Include="xmpp\xmpppassword.h" />
+    <ClInclude Include="xmpp\xmppstanzaparser.h" />
+    <ClInclude Include="xmpp\xmpptask.h" />
+    <ClInclude Include="base\asyncfile.h" />
+    <ClInclude Include="base\asyncpacketsocket.h" />
+    <ClInclude Include="base\asyncsocket.h" />
+    <ClInclude Include="base\asynctcpsocket.h" />
+    <ClInclude Include="base\asyncudpsocket.h" />
+    <ClInclude Include="base\base64.h" />
+    <ClInclude Include="base\basicdefs.h" />
+    <ClInclude Include="base\basictypes.h" />
+    <ClInclude Include="base\bytebuffer.h" />
+    <ClInclude Include="base\byteorder.h" />
+    <ClInclude Include="base\common.h" />
+    <ClInclude Include="base\criticalsection.h" />
+    <ClInclude Include="base\helpers.h" />
+    <ClInclude Include="base\host.h" />
+    <ClInclude Include="base\linked_ptr.h" />
+    <ClInclude Include="base\logging.h" />
+    <ClInclude Include="base\md5.h" />
+    <ClInclude Include="base\messagequeue.h" />
+    <ClInclude Include="base\network.h" />
+    <ClInclude Include="base\openssladapter.h" />
+    <ClInclude Include="base\physicalsocketserver.h" />
+    <ClInclude Include="base\proxyinfo.h" />
+    <ClInclude Include="base\schanneladapter.h" />
+    <ClInclude Include="base\scoped_ptr.h" />
+    <ClInclude Include="base\sec_buffer.h" />
+    <ClInclude Include="base\sigslot.h" />
+    <ClInclude Include="base\socket.h" />
+    <ClInclude Include="base\socketadapters.h" />
+    <ClInclude Include="base\socketaddress.h" />
+    <ClInclude Include="base\socketaddresspair.h" />
+    <ClInclude Include="base\socketfactory.h" />
+    <ClInclude Include="base\socketserver.h" />
+    <ClInclude Include="base\ssladapter.h" />
+    <ClInclude Include="base\stl_decl.h" />
+    <ClInclude Include="base\stream.h" />
+    <ClInclude Include="base\stringdigest.h" />
+    <ClInclude Include="base\stringencode.h" />
+    <ClInclude Include="base\stringutils.h" />
+    <ClInclude Include="base\task.h" />
+    <ClInclude Include="base\taskrunner.h" />
+    <ClInclude Include="base\thread.h" />
+    <ClInclude Include="base\time.h" />
+    <ClInclude Include="base\win32.h" />
+    <ClInclude Include="base\win32socketserver.h" />
+    <ClInclude Include="base\winfirewall.h" />
+    <ClInclude Include="base\winping.h" />
+    <ClInclude Include="p2p\base\candidate.h" />
+    <ClInclude Include="p2p\base\helpers.h" />
+    <ClInclude Include="p2p\base\p2psocket.h" />
+    <ClInclude Include="p2p\base\port.h" />
+    <ClInclude Include="p2p\base\portallocator.h" />
+    <ClInclude Include="p2p\base\pseudotcp.h" />
+    <ClInclude Include="p2p\base\relayport.h" />
+    <ClInclude Include="p2p\base\relayserver.h" />
+    <ClInclude Include="p2p\base\session.h" />
+    <ClInclude Include="p2p\base\sessiondescription.h" />
+    <ClInclude Include="p2p\base\sessionid.h" />
+    <ClInclude Include="p2p\base\sessionmanager.h" />
+    <ClInclude Include="p2p\base\sessionmessage.h" />
+    <ClInclude Include="p2p\base\sessionmessagefactory.h" />
+    <ClInclude Include="p2p\base\sessionresponsemessage.h" />
+    <ClInclude Include="p2p\base\socketmanager.h" />
+    <ClInclude Include="p2p\base\stun.h" />
+    <ClInclude Include="p2p\base\stunport.h" />
+    <ClInclude Include="p2p\base\stunrequest.h" />
+    <ClInclude Include="p2p\base\stunserver.h" />
+    <ClInclude Include="p2p\base\tcpport.h" />
+    <ClInclude Include="p2p\base\udpport.h" />
+    <ClInclude Include="p2p\client\basicportallocator.h" />
+    <ClInclude Include="p2p\client\sessionclient.h" />
+    <ClInclude Include="p2p\client\socketmonitor.h" />
+    <ClInclude Include="p2p\client\xmppsessionmessage.h" />
+    <ClInclude Include="p2p\client\xmppsessionmessagefactory.h" />
+    <ClInclude Include="p2p\client\xmppsessionresponsemessage.h" />
+    <ClInclude Include="session\receiver.h" />
+    <ClInclude Include="session\sessionsendtask.h" />
+    <ClInclude Include="session\tunnel\tunnelsessionclient.h" />
+    <ClInclude Include="session\phone\audiomonitor.h" />
+    <ClInclude Include="session\phone\call.h" />
+    <ClInclude Include="session\phone\channelmanager.h" />
+    <ClInclude Include="session\phone\gipslitemediaengine.h" />
+    <ClInclude Include="session\phone\mediachannel.h" />
+    <ClInclude Include="session\phone\mediaengine.h" />
+    <ClInclude Include="session\phone\phonesessionclient.h" />
+    <ClInclude Include="session\phone\voicechannel.h" />
+    <ClInclude Include="examples\login\presenceouttask.h" />
+    <ClInclude Include="examples\login\presencepushtask.h" />
+    <ClInclude Include="examples\login\xmppauth.h" />
+    <ClInclude Include="examples\login\xmpppump.h" />
+    <ClInclude Include="examples\login\xmppsocket.h" />
+    <ClInclude Include="examples\login\xmppthread.h" />
+    <ClInclude Include="libjingle\libjingle.h" />
+    <ClInclude Include="libjingle\libjingle_inner.h" />
+    <ClInclude Include="libjingle\strutils.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

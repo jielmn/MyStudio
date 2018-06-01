@@ -1,0 +1,63 @@
+###
+### Copyright (c) 2004 Keda Telecom, Inc.
+###
+
+#########################################################################
+###
+###  DESCRIPTION:
+###    Common definitions for all Makefiles in OSP linux project.
+###
+#########################################################################
+
+TOP := ..
+
+COMM_DIR := ./
+
+SRC_DIR := $(TOP)/source
+
+CURDIR := ./
+
+## Name and type of the target for this Makefile
+
+ARC_TARGET      := parsewrapper_d
+
+## Define debugging symbols
+DEBUG = 1
+LINUX_COMPILER= _REDHAT_
+PWLIB_SUPPORT = 0
+
+## CFLAGS := 
+
+## Object files that compose the target(s)
+
+OBJS := $(SRC_DIR)/bbiconv \
+        $(SRC_DIR)/splitstr \
+        $(SRC_DIR)/strconv \
+        $(SRC_DIR)/Urlcode \
+        $(SRC_DIR)/wbParseImpl \
+        $(SRC_DIR)/wbParseMalloc \
+        $(SRC_DIR)/wbParseObj \
+        $(SRC_DIR)/wbParser \
+        $(SRC_DIR)/wbParseWrapper
+        
+
+## Libraries to include in shared object file
+
+LIBS := pthread
+
+LIB_PATH = $(CURDIR)/../../../../10-common/lib/debug/linux
+
+## Add driver-specific include directory to the search path
+
+INC_PATH += $(CURDIR)/../include/ \
+	    $(CURDIR)/../../common
+	    
+
+ifeq ($(PWLIB_SUPPORT),1)
+   INC_PATH += $(PWLIBDIR)/include/ptlib/unix $(PWLIBDIR)/include
+endif
+
+INSTALL_LIB_PATH = $(CURDIR)/../../../../10-common/lib/debug/linux
+
+include $(COMM_DIR)/common.mk
+

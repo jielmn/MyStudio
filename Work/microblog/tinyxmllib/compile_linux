@@ -1,0 +1,48 @@
+#!/bin/sh
+
+OPTION=`echo $1 | tr "A-Z" "a-z"`
+
+
+echo "================ compiling tinyxml for linux ================"
+
+cd prj_linux
+
+if [ "$OPTION" != "noclean" ]; then
+           make -f makefile_linux_d clean;
+fi
+
+make -f makefile_linux_d 1> ../../../../10-common/version/compileinfo/tinyxml_linux_d.txt 2>&1
+echo makefile_linux_d completed!
+
+
+
+if [ "$OPTION" != "noclean" ]; then
+           make -f makefile_linux_r clean;
+fi
+
+make -f makefile_linux_r 1> ../../../../10-common/version/compileinfo/tinyxml_linux_r.txt 2>&1
+echo makefile_linux_r completed!
+
+cd ..
+
+
+
+echo "================ compiling tinyxml for linux_arm_d6446 ================"
+
+cd prj_linux_arm
+
+make -f makefile all 1>tinyxml_linux_compile_d6446.txt 2>&1
+cp tinyxml_linux_compile_d6446.txt ../../../../10-common/version/compileinfo/ -f
+
+cd ..
+
+
+
+echo "================ compiling tinyxml for linux_netra_h600 ================"
+
+cd prj_linux_netra
+
+make -f MAKEFILE.MK all 1>tinyxml_linux_netra_h600.txt 2>&1
+cp tinyxml_linux_netra_h600.txt ../../../../10-common/version/compileinfo/ -f
+
+cd ..

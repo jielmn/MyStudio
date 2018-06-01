@@ -1,0 +1,12 @@
+server = 1
+port   = 5081
+myid   = 001
+peerid = 007
+sessionid = file_share
+sender = 0
+remote addr = 192.168.1.100
+remote port = 5081
+
+file type = folder
+file path = D:\ytest
+myips = 192.168.48.1    192.168.187.1    192.168.1.102

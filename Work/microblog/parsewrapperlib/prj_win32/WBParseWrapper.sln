@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WBParseWrapper_VC90", "WBParseWrapper.vcproj", "{86C067AD-EAC0-47CC-B589-D2AA528CD41A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tinyxml_VC90", "..\..\tinyxmllib\prj_win32\tinyxml_VC90.vcproj", "{CA60AA78-2BB1-4954-9D25-856DC6A8127A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		DLL Debug|Win32 = DLL Debug|Win32
+		DLL Release|Win32 = DLL Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86C067AD-EAC0-47CC-B589-D2AA528CD41A}.DLL Debug|Win32.ActiveCfg = DLL Debug|Win32
+		{86C067AD-EAC0-47CC-B589-D2AA528CD41A}.DLL Debug|Win32.Build.0 = DLL Debug|Win32
+		{86C067AD-EAC0-47CC-B589-D2AA528CD41A}.DLL Release|Win32.ActiveCfg = DLL Release|Win32
+		{86C067AD-EAC0-47CC-B589-D2AA528CD41A}.DLL Release|Win32.Build.0 = DLL Release|Win32
+		{CA60AA78-2BB1-4954-9D25-856DC6A8127A}.DLL Debug|Win32.ActiveCfg = DLL Debug|Win32
+		{CA60AA78-2BB1-4954-9D25-856DC6A8127A}.DLL Debug|Win32.Build.0 = DLL Debug|Win32
+		{CA60AA78-2BB1-4954-9D25-856DC6A8127A}.DLL Release|Win32.ActiveCfg = DLL Release|Win32
+		{CA60AA78-2BB1-4954-9D25-856DC6A8127A}.DLL Release|Win32.Build.0 = DLL Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

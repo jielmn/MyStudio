@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7EDC37B3-D727-4627-9D99-7AA20E17F156}</ProjectGuid>
+    <RootNamespace>microblog</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>common;httplib\include;parsewrapperlib\include;tinyxmllib\include;weibolib\include;apilib\include;http_stack;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;MICROBLOG_EXPORTS;BUILDING_LIBWBPARSER;LIBHTTP_DLL;BUILDING_LIBWEIBO;KEDAWEIBOAPI_EXPORTS;HAVE_BOOL_T;_CRT_SECURE_NO_WARNINGS;MICROBLOG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>tinyxmlDll.lib;Secur32.lib;Crypt32.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\10-common\lib\debug\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>common;httplib\include;parsewrapperlib\include;tinyxmllib\include;weibolib\include;apilib\include;http_stack;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;MICROBLOG_EXPORTS;BUILDING_LIBWBPARSER;LIBHTTP_DLL;BUILDING_LIBWEIBO;KEDAWEIBOAPI_EXPORTS;HAVE_BOOL_T;_CRT_SECURE_NO_WARNINGS;MICROBLOG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>tinyxmlDll.lib;Secur32.lib;Crypt32.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\10-common\lib\release\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>microblog.map</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="httplib\source\bbiconv.cpp" />
+    <ClCompile Include="httplib\source\loBytebuffer.cpp" />
+    <ClCompile Include="httplib\source\loFile.cpp" />
+    <ClCompile Include="httplib\source\loHttp+.cpp" />
+    <ClCompile Include="httplib\source\loHttp.cpp" />
+    <ClCompile Include="httplib\source\loHttpAssoc.cpp" />
+    <ClCompile Include="httplib\source\loHttpCurl.cpp" />
+    <ClCompile Include="httplib\source\loHttpStr.cpp" />
+    <ClCompile Include="httplib\source\lostrconv.cpp" />
+    <ClCompile Include="httplib\source\loUrlcode.cpp" />
+    <ClCompile Include="httplib\source\spthread.c" />
+    <ClCompile Include="httplib\source\thpool.c" />
+    <ClCompile Include="http_stack\ssl_adapter.cpp" />
+    <ClCompile Include="weibolib\source\hash.c" />
+    <ClCompile Include="weibolib\source\oauth.c" />
+    <ClCompile Include="weibolib\source\wbCheck.cpp" />
+    <ClCompile Include="weibolib\source\wbOption.cpp" />
+    <ClCompile Include="weibolib\source\wbRequest.cpp" />
+    <ClCompile Include="weibolib\source\wbSession.cpp" />
+    <ClCompile Include="weibolib\source\wbString.cpp" />
+    <ClCompile Include="weibolib\source\wbURL.cpp" />
+    <ClCompile Include="weibolib\source\weibo.cpp" />
+    <ClCompile Include="weibolib\source\xmalloc.c" />
+    <ClCompile Include="apilib\source\KedaWeiBoAPI.cpp" />
+    <ClCompile Include="parsewrapperlib\source\splitstr.cpp" />
+    <ClCompile Include="parsewrapperlib\source\strconv.cpp" />
+    <ClCompile Include="parsewrapperlib\source\Urlcode.cpp" />
+    <ClCompile Include="parsewrapperlib\source\wbParseImpl.cpp" />
+    <ClCompile Include="parsewrapperlib\source\wbParseMalloc.cpp" />
+    <ClCompile Include="parsewrapperlib\source\wbParseObj.cpp" />
+    <ClCompile Include="parsewrapperlib\source\wbParser.cpp" />
+    <ClCompile Include="parsewrapperlib\source\wbParseWrapper.cpp" />
+    <ClCompile Include="http_stack\httpstack.cpp" />
+    <ClCompile Include="http_stack\inner.cpp" />
+    <ClCompile Include="http_stack\seli.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="httplib\include\bbiconv.h" />
+    <ClInclude Include="httplib\include\config-arm.h" />
+    <ClInclude Include="httplib\include\config-iOS.h" />
+    <ClInclude Include="httplib\include\config-linux.h" />
+    <ClInclude Include="httplib\include\config-netra.h" />
+    <ClInclude Include="httplib\include\config-win32.h" />
+    <ClInclude Include="httplib\include\loBytebuffer.h" />
+    <ClInclude Include="httplib\include\loFile.h" />
+    <ClInclude Include="httplib\include\loHttpAssoc.h" />
+    <ClInclude Include="httplib\include\loHttpCurl.h" />
+    <ClInclude Include="httplib\include\loHttpMap.h" />
+    <ClInclude Include="httplib\include\loHttpStr.h" />
+    <ClInclude Include="httplib\include\loHttpStruct.h" />
+    <ClInclude Include="httplib\include\loHttpThread.h" />
+    <ClInclude Include="httplib\include\loSafeInt.hpp" />
+    <ClInclude Include="httplib\include\lostrconv.h" />
+    <ClInclude Include="httplib\include\loUrlcode.h" />
+    <ClInclude Include="httplib\include\setup.h" />
+    <ClInclude Include="httplib\include\setup_once.h" />
+    <ClInclude Include="httplib\include\spthread.h" />
+    <ClInclude Include="common\KedaWeiBoAPI.h" />
+    <ClInclude Include="http_stack\ssl_adapter.h" />
+    <ClInclude Include="parsewrapperlib\include\bbiconv.h" />
+    <ClInclude Include="parsewrapperlib\include\strconv.h" />
+    <ClInclude Include="parsewrapperlib\include\Urlcode.h" />
+    <ClInclude Include="parsewrapperlib\include\wbParseImpl.h" />
+    <ClInclude Include="parsewrapperlib\include\wbParseMacro.h" />
+    <ClInclude Include="parsewrapperlib\include\wbParseT.hpp" />
+    <ClInclude Include="weibolib\include\bbiconv.h" />
+    <ClInclude Include="weibolib\include\oauth.h" />
+    <ClInclude Include="weibolib\include\strconv.h" />
+    <ClInclude Include="weibolib\include\Urlcode.h" />
+    <ClInclude Include="weibolib\include\wbCheck.h" />
+    <ClInclude Include="weibolib\include\wbLog.h" />
+    <ClInclude Include="weibolib\include\wbOption.h" />
+    <ClInclude Include="weibolib\include\wbRequest.h" />
+    <ClInclude Include="weibolib\include\wbSession.h" />
+    <ClInclude Include="weibolib\include\wbString.h" />
+    <ClInclude Include="weibolib\include\wbURL.h" />
+    <ClInclude Include="weibolib\include\xmalloc.h" />
+    <ClInclude Include="tinyxmllib\include\tinyxml\tinystr.h" />
+    <ClInclude Include="tinyxmllib\include\tinyxml\tinyxml.h" />
+    <ClInclude Include="tinyxmllib\include\tinyxml\tinyxml_VC90.h" />
+    <ClInclude Include="http_stack\httpstack.h" />
+    <ClInclude Include="http_stack\inner.h" />
+    <ClInclude Include="http_stack\seli.h" />
+    <ClInclude Include="common\libhttp\loHttp+.h" />
+    <ClInclude Include="common\libhttp\loHttp.h" />
+    <ClInclude Include="common\libhttp\loHttpDef.h" />
+    <ClInclude Include="common\libhttp\thpool.h" />
+    <ClInclude Include="common\wbParser\splitstr.h" />
+    <ClInclude Include="common\wbParser\wbParseMalloc.h" />
+    <ClInclude Include="common\wbParser\wbParseObj.h" />
+    <ClInclude Include="common\wbParser\wbParser.h" />
+    <ClInclude Include="common\wbParser\wbParseStruct.h" />
+    <ClInclude Include="common\wbParser\wbParseWrapper.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

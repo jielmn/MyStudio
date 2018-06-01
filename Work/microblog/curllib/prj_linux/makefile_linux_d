@@ -1,0 +1,117 @@
+###
+### Copyright (c) 2004 Keda Telecom, Inc.
+###
+
+#########################################################################
+###
+###  DESCRIPTION:
+###    Common definitions for all Makefiles in OSP linux project.
+###
+#########################################################################
+
+TOP := ..
+
+COMM_DIR := ./
+
+SRC_DIR := $(TOP)/source
+
+CURDIR := ./
+
+## Name and type of the target for this Makefile
+
+ARC_TARGET      := curl_d
+
+## Define debugging symbols
+DEBUG = 1
+LINUX_COMPILER= _REDHAT_
+PWLIB_SUPPORT = 0
+
+CFLAGS := -D__LINUX__ -DHTTP_ONLY
+
+## Object files that compose the target(s)
+
+OBJS := $(SRC_DIR)/base64	\
+	$(SRC_DIR)/connect	\
+        $(SRC_DIR)/content_encoding	\
+        $(SRC_DIR)/cookie	\
+        $(SRC_DIR)/curl_addrinfo			\
+        $(SRC_DIR)/curl_fnmatch		\
+        $(SRC_DIR)/curl_gethostname		\
+        $(SRC_DIR)/curl_memrchr	\
+        $(SRC_DIR)/curl_rand		\
+        $(SRC_DIR)/curl_threads \
+        $(SRC_DIR)/easy \
+        $(SRC_DIR)/escape \
+        $(SRC_DIR)/fileinfo \
+        $(SRC_DIR)/formdata \
+        $(SRC_DIR)/getenv \
+        $(SRC_DIR)/getinfo \
+        $(SRC_DIR)/hash \
+        $(SRC_DIR)/hmac \
+        $(SRC_DIR)/hostares \
+        $(SRC_DIR)/hostasyn \
+        $(SRC_DIR)/hostip \
+        $(SRC_DIR)/hostip4 \
+        $(SRC_DIR)/hostip6 \
+        $(SRC_DIR)/hostsyn \
+        $(SRC_DIR)/hostthre \
+        $(SRC_DIR)/http \
+        $(SRC_DIR)/http_chunks \
+        $(SRC_DIR)/http_digest \
+        $(SRC_DIR)/http_negotiate \
+        $(SRC_DIR)/if2ip \
+        $(SRC_DIR)/inet_ntop \
+        $(SRC_DIR)/inet_pton \
+        $(SRC_DIR)/llist \
+        $(SRC_DIR)/md5 \
+        $(SRC_DIR)/memdebug \
+        $(SRC_DIR)/mprintf \
+        $(SRC_DIR)/multi \
+        $(SRC_DIR)/netrc \
+        $(SRC_DIR)/nonblock \
+        $(SRC_DIR)/parsedate \
+        $(SRC_DIR)/pingpong \
+        $(SRC_DIR)/progress \
+        $(SRC_DIR)/rawstr \
+        $(SRC_DIR)/select \
+        $(SRC_DIR)/sendf \
+        $(SRC_DIR)/share \
+        $(SRC_DIR)/slist \
+        $(SRC_DIR)/socks \
+        $(SRC_DIR)/speedcheck \
+        $(SRC_DIR)/splay \
+        $(SRC_DIR)/sslgen \
+        $(SRC_DIR)/ssluse \
+        $(SRC_DIR)/strdup \
+        $(SRC_DIR)/strequal \
+        $(SRC_DIR)/strerror \
+        $(SRC_DIR)/strtok \
+        $(SRC_DIR)/strtoofft \
+        $(SRC_DIR)/timeval \
+        $(SRC_DIR)/transfer \
+        $(SRC_DIR)/url \
+        $(SRC_DIR)/version \
+        $(SRC_DIR)/warnless \
+        $(SRC_DIR)/wildcard
+        
+
+## Libraries to include in shared object file
+
+LIBS := pthread
+
+LIB_PATH = $(CURDIR)/../../../../10-common/lib/debug/linux
+
+## Add driver-specific include directory to the search path
+
+INC_PATH += $(CURDIR)/../include/ \
+	    $(CURDIR)/../../common
+	    
+
+ifeq ($(PWLIB_SUPPORT),1)
+   INC_PATH += $(PWLIBDIR)/include/ptlib/unix $(PWLIBDIR)/include
+endif
+
+INSTALL_LIB_PATH = $(CURDIR)/../../../../10-common/lib/debug/linux
+
+include $(COMM_DIR)/common.mk
+

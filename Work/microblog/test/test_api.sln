@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_api", "test_api.vcproj", "{851D540B-9D1D-426A-BC5F-892F95073EE3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		DLL Debug|Win32 = DLL Debug|Win32
+		DLL Release|Win32 = DLL Release|Win32
+		Lib Debug|Win32 = Lib Debug|Win32
+		Lib Release|Win32 = Lib Release|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{851D540B-9D1D-426A-BC5F-892F95073EE3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{851D540B-9D1D-426A-BC5F-892F95073EE3}.Debug|Win32.Build.0 = Debug|Win32
+		{851D540B-9D1D-426A-BC5F-892F95073EE3}.DLL Debug|Win32.ActiveCfg = Debug|Win32
+		{851D540B-9D1D-426A-BC5F-892F95073EE3}.DLL Debug|Win32.Build.0 = Debug|Win32
+		{851D540B-9D1D-426A-BC5F-892F95073EE3}.DLL Release|Win32.ActiveCfg = Release|Win32
+		{851D540B-9D1D-426A-BC5F-892F95073EE3}.DLL Release|Win32.Build.0 = Release|Win32
+		{851D540B-9D1D-426A-BC5F-892F95073EE3}.Lib Debug|Win32.ActiveCfg = Debug|Win32
+		{851D540B-9D1D-426A-BC5F-892F95073EE3}.Lib Debug|Win32.Build.0 = Debug|Win32
+		{851D540B-9D1D-426A-BC5F-892F95073EE3}.Lib Release|Win32.ActiveCfg = Release|Win32
+		{851D540B-9D1D-426A-BC5F-892F95073EE3}.Lib Release|Win32.Build.0 = Release|Win32
+		{851D540B-9D1D-426A-BC5F-892F95073EE3}.Release|Win32.ActiveCfg = Debug|Win32
+		{851D540B-9D1D-426A-BC5F-892F95073EE3}.Release|Win32.Build.0 = Debug|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

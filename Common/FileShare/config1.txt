@@ -1,0 +1,12 @@
+server = 0
+port   = 5081
+myid   = 007
+peerid = 001
+sessionid = file_share
+sender = 1
+remote addr = 192.168.1.102
+remote port = 5081
+
+file type = folder
+file path = /mnt/lemon/Common/FileShare/test2
+myips = 192.168.1.100

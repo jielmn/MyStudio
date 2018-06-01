@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WeiBo_VC90", "libWeiBo_VS2008.vcproj", "{6AA1F0B5-8235-4C5E-AF10-AC905963F36D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		DLL Debug|Win32 = DLL Debug|Win32
+		DLL Release|Win32 = DLL Release|Win32
+		Lib Debug|Win32 = Lib Debug|Win32
+		Lib Release|Win32 = Lib Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6AA1F0B5-8235-4C5E-AF10-AC905963F36D}.DLL Debug|Win32.ActiveCfg = DLL Debug|Win32
+		{6AA1F0B5-8235-4C5E-AF10-AC905963F36D}.DLL Debug|Win32.Build.0 = DLL Debug|Win32
+		{6AA1F0B5-8235-4C5E-AF10-AC905963F36D}.DLL Release|Win32.ActiveCfg = DLL Release|Win32
+		{6AA1F0B5-8235-4C5E-AF10-AC905963F36D}.DLL Release|Win32.Build.0 = DLL Release|Win32
+		{6AA1F0B5-8235-4C5E-AF10-AC905963F36D}.Lib Debug|Win32.ActiveCfg = Lib Debug|Win32
+		{6AA1F0B5-8235-4C5E-AF10-AC905963F36D}.Lib Debug|Win32.Build.0 = Lib Debug|Win32
+		{6AA1F0B5-8235-4C5E-AF10-AC905963F36D}.Lib Release|Win32.ActiveCfg = Lib Release|Win32
+		{6AA1F0B5-8235-4C5E-AF10-AC905963F36D}.Lib Release|Win32.Build.0 = Lib Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

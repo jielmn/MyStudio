@@ -1,0 +1,66 @@
+###
+### Copyright (c) 2004 Keda Telecom, Inc.
+###
+
+#########################################################################
+###
+###  DESCRIPTION:
+###    Common definitions for all Makefiles in OSP linux project.
+###
+#########################################################################
+
+TOP := ..
+
+COMM_DIR := ./
+
+SRC_DIR := $(TOP)/source
+
+CURDIR := ./
+
+## Name and type of the target for this Makefile
+
+ARC_TARGET      := weibo_r
+
+## Define debugging symbols
+DEBUG = 0
+LINUX_COMPILER= _REDHAT_
+PWLIB_SUPPORT = 0
+
+## CFLAGS := -D__LINUX__
+
+## Object files that compose the target(s)
+
+OBJS := $(SRC_DIR)/wbCheck \
+	$(SRC_DIR)/wbOption \
+        $(SRC_DIR)/wbRequest \
+        $(SRC_DIR)/wbSession \
+        $(SRC_DIR)/wbString \
+        $(SRC_DIR)/wbURL \
+        $(SRC_DIR)/weibo \
+        $(SRC_DIR)/bbiconv \
+        $(SRC_DIR)/hash \
+        $(SRC_DIR)/oauth \
+        $(SRC_DIR)/strconv \
+        $(SRC_DIR)/Urlcode \
+        $(SRC_DIR)/xmalloc
+        
+
+## Libraries to include in shared object file
+
+## LIBS := 
+
+## LIB_PATH = $(CURDIR)/../../../../10-common/lib/release/linux
+
+## Add driver-specific include directory to the search path
+
+INC_PATH += $(CURDIR)/../include/ \
+	    $(CURDIR)/../../common
+
+ifeq ($(PWLIB_SUPPORT),1)
+   INC_PATH += $(PWLIBDIR)/include/ptlib/unix $(PWLIBDIR)/include
+endif
+
+INSTALL_LIB_PATH = $(CURDIR)/../../../../10-common/lib/release/linux
+
+include $(COMM_DIR)/common.mk
+

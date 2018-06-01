@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA747D9F0F9514B9006C5449 /* Http_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* Http_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		BB037DDA158EC8C700557182 /* thpool.c in Sources */ = {isa = PBXBuildFile; fileRef = BB037DD9158EC8C700557182 /* thpool.c */; };
+		BB2E70601540F884005D515C /* bbiconv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB2E705F1540F884005D515C /* bbiconv.cpp */; };
+		BBD40D92150DC76800F5F39D /* loBytebuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBD40D87150DC76800F5F39D /* loBytebuffer.cpp */; };
+		BBD40D93150DC76800F5F39D /* loFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBD40D88150DC76800F5F39D /* loFile.cpp */; };
+		BBD40D94150DC76800F5F39D /* loHttp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBD40D89150DC76800F5F39D /* loHttp.cpp */; };
+		BBD40D95150DC76800F5F39D /* loHttp+.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBD40D8A150DC76800F5F39D /* loHttp+.cpp */; };
+		BBD40D96150DC76800F5F39D /* loHttpAssoc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBD40D8B150DC76800F5F39D /* loHttpAssoc.cpp */; };
+		BBD40D97150DC76800F5F39D /* loHttpCurl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBD40D8C150DC76800F5F39D /* loHttpCurl.cpp */; };
+		BBD40D98150DC76800F5F39D /* loHttpStr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBD40D8D150DC76800F5F39D /* loHttpStr.cpp */; };
+		BBD40D9A150DC76800F5F39D /* lostrconv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBD40D8F150DC76800F5F39D /* lostrconv.cpp */; };
+		BBD40D9B150DC76800F5F39D /* loUrlcode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBD40D90150DC76800F5F39D /* loUrlcode.cpp */; };
+		BBF2E87C161182A600BD9B38 /* spthread.c in Sources */ = {isa = PBXBuildFile; fileRef = BBF2E87B161182A600BD9B38 /* spthread.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA747D9E0F9514B9006C5449 /* Http_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Http_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BB037DD9158EC8C700557182 /* thpool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = thpool.c; path = ../source/thpool.c; sourceTree = "<group>"; };
+		BB2E705F1540F884005D515C /* bbiconv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = bbiconv.cpp; path = ../source/bbiconv.cpp; sourceTree = "<group>"; };
+		BBD40D87150DC76800F5F39D /* loBytebuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = loBytebuffer.cpp; path = ../source/loBytebuffer.cpp; sourceTree = "<group>"; };
+		BBD40D88150DC76800F5F39D /* loFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = loFile.cpp; path = ../source/loFile.cpp; sourceTree = "<group>"; };
+		BBD40D89150DC76800F5F39D /* loHttp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = loHttp.cpp; path = ../source/loHttp.cpp; sourceTree = "<group>"; };
+		BBD40D8A150DC76800F5F39D /* loHttp+.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "loHttp+.cpp"; path = "../source/loHttp+.cpp"; sourceTree = "<group>"; };
+		BBD40D8B150DC76800F5F39D /* loHttpAssoc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = loHttpAssoc.cpp; path = ../source/loHttpAssoc.cpp; sourceTree = "<group>"; };
+		BBD40D8C150DC76800F5F39D /* loHttpCurl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = loHttpCurl.cpp; path = ../source/loHttpCurl.cpp; sourceTree = "<group>"; };
+		BBD40D8D150DC76800F5F39D /* loHttpStr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = loHttpStr.cpp; path = ../source/loHttpStr.cpp; sourceTree = "<group>"; };
+		BBD40D8F150DC76800F5F39D /* lostrconv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lostrconv.cpp; path = ../source/lostrconv.cpp; sourceTree = "<group>"; };
+		BBD40D90150DC76800F5F39D /* loUrlcode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = loUrlcode.cpp; path = ../source/loUrlcode.cpp; sourceTree = "<group>"; };
+		BBF2E87B161182A600BD9B38 /* spthread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = spthread.c; path = ../source/spthread.c; sourceTree = SOURCE_ROOT; };
+		D2AAC07E0554694100DB518D /* libhttp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libhttp.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libhttp.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = Http;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BBF2E87B161182A600BD9B38 /* spthread.c */,
+				BB037DD9158EC8C700557182 /* thpool.c */,
+				BB2E705F1540F884005D515C /* bbiconv.cpp */,
+				BBD40D87150DC76800F5F39D /* loBytebuffer.cpp */,
+				BBD40D88150DC76800F5F39D /* loFile.cpp */,
+				BBD40D89150DC76800F5F39D /* loHttp.cpp */,
+				BBD40D8A150DC76800F5F39D /* loHttp+.cpp */,
+				BBD40D8B150DC76800F5F39D /* loHttpAssoc.cpp */,
+				BBD40D8C150DC76800F5F39D /* loHttpCurl.cpp */,
+				BBD40D8D150DC76800F5F39D /* loHttpStr.cpp */,
+				BBD40D8F150DC76800F5F39D /* lostrconv.cpp */,
+				BBD40D90150DC76800F5F39D /* loUrlcode.cpp */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* Http_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* Http_Prefix.pch in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* Http */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "Http" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Http;
+			productName = Http;
+			productReference = D2AAC07E0554694100DB518D /* libhttp.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "Http" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* Http */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* Http */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBD40D92150DC76800F5F39D /* loBytebuffer.cpp in Sources */,
+				BBD40D93150DC76800F5F39D /* loFile.cpp in Sources */,
+				BBD40D94150DC76800F5F39D /* loHttp.cpp in Sources */,
+				BBD40D95150DC76800F5F39D /* loHttp+.cpp in Sources */,
+				BBD40D96150DC76800F5F39D /* loHttpAssoc.cpp in Sources */,
+				BBD40D97150DC76800F5F39D /* loHttpCurl.cpp in Sources */,
+				BBD40D98150DC76800F5F39D /* loHttpStr.cpp in Sources */,
+				BBD40D9A150DC76800F5F39D /* lostrconv.cpp in Sources */,
+				BBD40D9B150DC76800F5F39D /* loUrlcode.cpp in Sources */,
+				BB2E70601540F884005D515C /* bbiconv.cpp in Sources */,
+				BB037DDA158EC8C700557182 /* thpool.c in Sources */,
+				BBF2E87C161182A600BD9B38 /* spthread.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/Http.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Http_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__IOS__,
+					_IOS_,
+					_IOS_PLATFORM_,
+				);
+				HEADER_SEARCH_PATHS = (
+					../../http_stack,
+					../../common,
+					"../include/**",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = http;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				DSTROOT = /tmp/Http.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Http_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__IOS__,
+					_IOS_,
+					_IOS_PLATFORM_,
+				);
+				HEADER_SEARCH_PATHS = (
+					../../http_stack,
+					../../common,
+					"../include/**",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = http;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = HAVE_SYS_SOCKET_H;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "./include/**";
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "Http" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "Http" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
